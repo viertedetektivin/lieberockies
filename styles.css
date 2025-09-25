@@ -1,0 +1,352 @@
+@charset "utf-8";
+
+* {
+    box-sizing: border-box;
+    font-family: "Helvetica";
+}
+
+body {
+    background: linear-gradient(#e9ddf5, #ab85db);
+}
+
+/*HEADER*/
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-shrink: 1;
+    flex-grow: 1;
+}
+
+.social-media {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-shrink: 1;
+    flex-grow: 1;
+}
+
+.logo {
+    margin-right: auto;
+    width: 10%;
+    height: auto;
+    float: left;
+}
+
+.instagram {
+    margin-left: 2%;
+    margin-right: 2%;
+}
+.facebook {
+    margin-left: 2%;
+    margin-right: 2%;
+}
+.youtube {
+    margin-left: 2%;
+    margin-right: 2%;
+}
+.discord {
+    margin-left: 2%;
+    margin-right: 2%;
+}
+.spotify {
+    margin-left: 2%;
+    margin-right: 2%;
+}
+.logo-cr {
+    margin-left: auto;
+    width: 10%;
+    height: auto;
+    float: right;
+}
+
+/*NAVBAR*/
+
+.navbar {
+    position: sticky;
+    width: 100%;
+    padding: 1.3rem 10%;
+    background: #e9ddf5;
+    display: flex;
+    justify-content: space-between;
+    z-index: 100;
+    padding-right: 5%;
+    padding-left: 5%;
+}
+
+.navbar a {
+    font-size: 1.5rem;
+    color: #8488d9;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    background-color: #8488d9;
+    color: #e9ddf5;
+}
+
+/*BODY*/
+
+h1 {
+    color: #8488d9;
+    text-align: center;
+    font-size: 50px;
+}
+
+h2,
+h3 {
+    font-size: 40px;
+    color: #8488d9;
+    text-align: center;
+}
+
+h4 {
+    font-size: 30px;
+    color: #8488d9;
+}
+
+p {
+    font-size: 20px;
+    color: #8488d9;
+}
+
+img {
+    max-inline-size: 100%;
+}
+
+/*MAIN PAGE*/
+
+.banner {
+    width: 70%;
+    height: auto;
+    float: left;
+    padding: 0 10px 0 0;
+}
+
+.beschreibung {
+    margin: 150px auto;
+    width: 100%;
+    padding: 8px;
+}
+
+.intro {
+    text-align: justify;
+}
+
+.intro p {
+    size: 20px;
+    color: #8488d9;
+}
+
+.neustefolge {
+    padding: 0 5px;
+
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 5rem;
+}
+
+.podcast iframe {
+    border: none;
+}
+
+/*FOOTER*/
+
+.footer-box {
+    background: #e9ddf5;
+    display: flex;
+}
+
+.impressum-datenschutz {
+    color: #8488d9;
+}
+
+.impressum-datenschutz {
+    width: 100%;
+    padding: 1.3rem 10%;
+    background: #e9ddf5;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 100;
+    padding-right: 5%;
+    padding-left: 5%;
+}
+
+.impressum a {
+    color: #8488d9;
+}
+
+.wichtiges {
+    width: 100%;
+    padding: 1.3rem 10%;
+    background: #e9ddf5;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 100;
+    padding-right: 5%;
+    padding-left: 5%;
+}
+
+.wichtiges p {
+    color: #8488d9;
+}
+
+/*Über uns*/
+
+.uber-cara {
+    width: 100%;
+    min-height: 100vh;
+}
+
+.cara-cara {
+    width: 80%;
+    display: block;
+    margin: auto;
+}
+
+.cara-mara {
+    float: right;
+    width: 55%;
+}
+
+.cara-bild {
+    float: left;
+    width: 40%;
+}
+
+.cara-social {
+    width: 20%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.cara {
+    font-size: 60px;
+}
+
+
+.uber-nele {
+    width: 100%;
+    min-height: 100vh;
+}
+
+.nele-nele {
+    width: 80%;
+    display: block;
+    margin: auto;
+}
+
+.nele-pele {
+    float: left;
+    width: 55%;
+}
+
+.nele-bild {
+    float: right;
+    width: 40%;
+}
+
+.nele-social {
+    width: 20%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nele {
+    font-size: 60px;
+}
+
+
+/*REZENSIONEN*/
+
+.rezi{
+    display:flex;
+}
+
+.rezi p{
+    font-size: 20px;
+}
+
+
+/*CAMPUSRADIO*/
+
+.campusradio{
+    display: flex;
+    justify-content: space-between;
+    padding: 2%;
+}
+
+
+
+/*LINKS*/
+
+.links{
+    display: flex;
+}
+
+.links a:hover{
+    background-color: #8488d9;
+    color: #e9ddf5;
+}
+
+.socials{
+    flex: 40%;
+}
+
+.andere-links{
+    flex: 60%;
+}
+
+.dropdown-content{
+    display: none;
+}
+
+.dropdown:hover .dropdown-content{
+    display: block;
+}
+
+.dropdown:hover{
+      background-color: #8488d9;
+    color: #e9ddf5;
+}
+span{
+    color: #ab85db;
+}
+
+span:hover{
+    color: #e9ddf5;
+}
+
+.cara-social a{
+    width: 500%;
+}
+
+
+/*KONTAKT*/
+
+.contact-box{
+    background: #e9ddf5;
+    display: flex;
+}
+
+.contact-left{
+    flex-basis: 60%;
+    padding: 40px;
+}
+
+.contact-right{
+    flex-basis: 40%;
+    padding: 40px;
+}
